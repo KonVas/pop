@@ -1,12 +1,14 @@
 pop
 ===
 
-This is code snippets for an interactive installation project using Arduino & SuperCollider.
+* POP
 
-* Software
-SuperCollider
-POP code: interface + synth.
-Arduino: Firmata firmware.
+Code snippets for an interactive installation project using Arduino & SuperCollider.
+
+** Software
+1. SuperCollider (3.6 or later).
+2. POP code: interface + synth.
+3. Arduino: Firmata firmware.
 
 ** Hardware:
 1. An Arduino board.
@@ -16,3 +18,7 @@ Arduino: Firmata firmware.
 3.  One temperature sensor.
 
 4.  A motion detector.
+
+*** Instructions
+
+First run the interface scd in SuperCollider, to start listening to the incoming data of the sensors and the arduino board. Once everything is up and running, shoot the synth (sound synthesis) document. Good luck.
