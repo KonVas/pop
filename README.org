@@ -1,6 +1,3 @@
-pop
-===
-
 * POP
 
 Code snippets for an interactive installation project using Arduino & SuperCollider.
