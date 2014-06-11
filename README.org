@@ -4,7 +4,7 @@ pop
 This is code snippets for an interactive installation project using Arduino & SuperCollider.
 
 ** Hardware:
-*** An Arduino board.
-*** Two light sensors.
-*** One temperature sensor.
-*** A motion detector.
+ An Arduino board.
+Two light sensors.
+ One temperature sensor.
+ A motion detector.
