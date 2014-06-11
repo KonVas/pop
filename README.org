@@ -3,6 +3,11 @@ pop
 
 This is code snippets for an interactive installation project using Arduino & SuperCollider.
 
+* Software
+SuperCollider
+POP code: interface + synth.
+Arduino: Firmata firmware.
+
 ** Hardware:
 1. An Arduino board.
 
