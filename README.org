@@ -8,11 +8,11 @@ Code snippets for an interactive installation project using Arduino & SuperColli
 3. Arduino: Firmata firmware.
 
 ** Usage
-Dependent repositories:
+Dependent repositories[fn:1]:
 + https://github.com/blacksound/SCFirmata
 + https://github.com/iani/tiny-sc/blob/e75f230815f0525dfa03e8b368a5a49069a3d676/Classes/AccessAndNotifications/Notification.sc
 
-***** Move these to Extensions folder of SuperCollider.
+ [fn:1] Move these to Extensions folder of SuperCollider.
 
 ** Hardware:
 1. An Arduino board.
