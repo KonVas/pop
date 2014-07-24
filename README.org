@@ -1,6 +1,6 @@
 * POP
 
-Code snippets for an interactive installation project using Arduino & SuperCollider.
+Code snippets for an interactive installation project using Arduino <Firmata> SuperCollider.
 
 ** Software
 1. SuperCollider (3.6 or later).
@@ -14,11 +14,8 @@ Dependent repositories
 
 ** Hardware:
 1. An Arduino board.
-
 2. Two light sensors.
-
 3.  One temperature sensor.
-
 4.  A motion detector.
 
 ** Instructions
