@@ -1,4 +1,4 @@
-* POP
+* PoP
 
 Code snippets for an interactive installation project using Arduino <Firmata> SuperCollider.
 
