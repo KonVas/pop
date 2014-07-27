@@ -20,7 +20,7 @@ Dependent repositories
 
 ** Instructions
 
-First run the interface scd in SuperCollider, to start listening to the incoming data of the sensors. Once everything is up and running, shoot the synth (sound synthesis) document.
+First run the file 'interface.scd' in SuperCollider, to start listening to the incoming data of the sensors. Once everything is up and running, shoot the synth (sound synthesis) document.
 
 * Footnotes
 
