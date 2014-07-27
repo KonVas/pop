@@ -1,6 +1,6 @@
-* POP
+* PoP
 
-Code snippets for an interactive installation project using Arduino & SuperCollider.
+Code snippets for an interactive installation project using Arduino <Firmata> SuperCollider.
 
 ** Software
 1. SuperCollider (3.6 or later).
@@ -8,21 +8,22 @@ Code snippets for an interactive installation project using Arduino & SuperColli
 3. Arduino: Firmata firmware.
 
 ** Usage
-Dependent repositories:
-+ https://github.com/blacksound/SCFirmata
-+ https://github.com/iani/tiny-sc/blob/e75f230815f0525dfa03e8b368a5a49069a3d676/Classes/AccessAndNotifications/Notification.sc
-
-***** Move these to Extensions folder of SuperCollider.
+Dependent repositories
++ SCFirmata[fn:1]
++ Notification[fn:2]
 
 ** Hardware:
 1. An Arduino board.
-
 2. Two light sensors.
-
 3.  One temperature sensor.
-
 4.  A motion detector.
 
-*** Instructions
+** Instructions
 
 First run the interface scd in SuperCollider, to start listening to the incoming data of the sensors and the arduino board. Once everything is up and running, shoot the synth (sound synthesis) document. Good luck.
+
+* Footnotes
+
+[fn:1]https://github.com/blacksound/SCFirmata
+
+[fn:2]https://github.com/iani/tiny-sc/blob/e75f230815f0525dfa03e8b368a5a49069a3d676/Classes/AccessAndNotifications/Notification.sc
