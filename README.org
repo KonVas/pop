@@ -24,6 +24,6 @@ First run the interface scd in SuperCollider, to start listening to the incoming
 
 * Footnotes
 
-[fn:1]https://github.com/blacksound/SCFirmata
+[fn:1] https://github.com/blacksound/SCFirmata
 
-[fn:2]https://github.com/iani/tiny-sc/blob/e75f230815f0525dfa03e8b368a5a49069a3d676/Classes/AccessAndNotifications/Notification.sc
+[fn:2] https://github.com/iani/tiny-sc/blob/e75f230815f0525dfa03e8b368a5a49069a3d676/Classes/AccessAndNotifications/Notification.sc
