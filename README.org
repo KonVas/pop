@@ -9,8 +9,8 @@ Code snippets for an interactive installation project using Arduino <Firmata> Su
 
 ** Usage
 Dependent repositories
-+ SCFirmata[fn:1]
-+ Notification[fn:2]
++ SCFirmata [fn:1]
++ Notification [fn:2]
 
 ** Hardware:
 1. An Arduino board.
