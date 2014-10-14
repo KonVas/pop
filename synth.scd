@@ -73,22 +73,26 @@ SynthDef.new(\feedblip, { | in |
 }).add;
 
 ////////a pbind to play the blip synth///////
-Pbind(
-	\instrument, \blip,
-	\out, Prand([0, ~feedBus], inf),
-	\nodes, Pfunc{ ~light2.linlin(0.0, 1.0, 1.0, 5.0).asInteger },
-	\dens, Pfunc{ ~light.linlin(0.0, 1.0, 0.3, 4.0).asFloat },
-	\fund, Pfunc{ ~light.linexp(0.0, 1.0, 200, 1200).asInteger },
-	\switch, Pfunc{ ~motion.asInteger },
-	\granAttack, Pfunc{ ~temp / 100  },
-	\granRelease, Pfunc{ ~temp / 100 + 0.3 },
-	\amp, Pfunc { |e| 0.3! e.nodes / e.nodes},
-	\fadeTime, 0.02,
-	\detune, [0, 2, 5, 1],
-	\sustain, 0.01,
-	\release, Pfunc { ~motion.linlin(0, 1, 2, 0) },
-	\delta, 1
-).play;
+	(
+		Pdef(\x,
+		Pbind(
+			\instrument, \blip,
+			\out, Prand([0, ~feedBus], inf),
+			\nodes, Pfunc{ ~light2.linlin(0.0, 1.0, 1, 15).asInteger  },
+			\dens, Pfunc{ ~light.linlin(0.0, 1.0, 0.1, 4.0) },
+			\fund, Pfunc{ ~light.linexp(0.0, 1.0, 200, 4000).asInteger },
+			\switch, Pfunc{ ~motion.asInteger },
+			\granAttack, Pfunc{ ~temp / 100  },
+			\granRelease, Pfunc{ ~temp / 100 + 0.1 },
+			\amp, Pfunc { |e| 0.3! e.nodes / e.nodes},
+			\fadeTime, 0.02,
+			\detune, [0, 2, 5, 1],
+			\sustain, 0.01,
+			\release, Pfunc { ~motion.linlin(0, 1, 2, 0) },
+			\delta, 0.5
+		)
+	).play;
+	);
 
 s.sync;
 

@@ -1,3 +1,4 @@
+MasterEQ(2, s);
 {
 ~arduino = FirmataDevice(SerialPort.devices[2]);
 
@@ -14,10 +15,12 @@
 	~sliders[0].value = val / 1023;
 	~light = ~sliders[0].value;
 })
-//temp = (5.0 * analogRead(tempPin) * 100.0) / 1024;
 .addNotifier(\arduino1, \temperature, { | val |
-	~sliders[1].value = val /1023;
-	~temp = ~sliders[1].value;
+		var temp;
+		temp = (5.0 * val * 100.0) / 1023;
+		/*http://playground.arduino.cc/Main/LM35HigherResolution*/
+		~sliders[1].value = temp /1023;
+		~temp = temp;
 })
 .addNotifier(\arduino1, \light2, { | val |
 	~sliders[2].value = val / 1023;
@@ -61,7 +64,7 @@
 
 	0.5.wait;
 
-	"~/Dropbox/Arduino/synth.scd".load;
+	"/Users/KV/Documents/Dev/Projects/pop/synth.scd".load;
 
 }.fork(AppClock);
 
